@@ -1,0 +1,779 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color:white;
+    align-items: center;
+    position: fixed;
+}
+
+@media screen and (max-width:478px) {
+    .header{
+        width: auto;
+    }
+    
+}
+
+.title {
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "M PLUS Rounded 1c";
+    padding-left: 20px;
+}
+
+.menu-item {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width:478px) {
+    .menu-item{
+        font-size: 10px;
+        padding: 10px;
+    }
+    
+}
+
+.section1 {
+    background-image: url(./reef.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:478px) {
+    .section1{
+        width: auto;
+    }
+    
+}
+
+h1 {
+    font-size: 110px;
+    font-family: "M PLUS Rounded 1c";
+    animation: fadeIn 0.7s ease 0s 1 normal;
+    color: #E6E6E6;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width:478px) {
+    .section1 h1{
+        font-size: 50px;
+    }
+    
+}
+
+  
+    
+
+.section2 {
+    height: 80vh;
+    background-color:white;
+    font-size: 20px;
+    display: flex;
+    
+}
+
+@media screen and (max-width:478px) {
+    .section2{
+        display: block;
+        height: auto;
+    }
+    
+}
+
+.section2left {
+    width: 35vw;
+    height: 60vh;
+    padding: 90px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width:478px) {
+    .section2left{
+        width: auto;
+        height: 40vh;
+    }
+    
+}
+
+.visiontitle {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.decision {
+    text-align: center;
+    font-size: 23px;
+    font-family: "M PLUS Rounded 1c";
+    animation: transscaleX 1.7s ease 0s 1 normal;
+}
+
+@media screen and (max-width:478px) {
+    .decision{
+        font-size: 15px;
+    }
+    
+}
+
+@keyframes transscaleX {
+    0% {
+      transform:scaleX(0);
+    }
+    100% {
+      transform:scaleX(1);
+    }
+  }
+
+.section2right {
+    display: flex;
+}
+
+
+@media screen and (max-width:478px) {
+    .section2right{
+        margin: 0;
+        padding: 0;
+    }   
+}
+
+@media screen and (max-width:478px) {
+    .section2right{
+        display: block;
+        width: auto;
+    }
+    
+}
+.picture1 {
+    height: 50vh;
+    padding: 90px 20px; animation: transscaleX 1.7s ease 0s 1 normal;
+
+}
+
+@media screen and (max-width:478px) {
+    .picture1{
+        width: 60vw;
+        height: 40vh;
+        padding: 10px 80px;
+
+    }
+    
+}
+
+.picture2 {
+    height:55vh;
+    padding: 160px 30px;
+    animation: transscaleX 1.7s ease 0s 1 normal;
+}
+
+@media screen and (max-width:478px) {
+    .picture2{
+        width: 60vw;
+        height: 40vh;
+        padding: 10px 80px;
+    }
+    
+}
+
+
+
+
+.section3 {
+    height: 80vh;
+    background-color:white;
+   
+}
+
+@media screen and (max-width:478px) {
+    .section3{
+        width: auto;
+        height: 150vh;
+    }
+    
+}
+
+.mission {
+    font-size: 35px;
+    font-family: "M PLUS Rounded 1c";
+    text-align: center;
+    padding-top: 25px;
+}
+
+@media screen and (max-width:478px) {
+    .mission{
+        width: auto;
+        font-size: 18px;
+    }
+    
+}
+
+.missiondetail {
+    font-size: 20px;
+    padding: 15px;
+}
+
+@media screen and (max-width:478px) {
+    .missiondetail{
+        width: auto;
+        font-size: 15px;
+    }
+    
+}
+
+.missionbottum {
+    padding: 43px;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+
+}
+
+@media screen and (max-width:478px) {
+    .missionbottum{
+        width: auto;
+        
+    }
+    
+}
+
+.backtext {
+    font-size: 22px;
+    font-family: "M PLUS Rounded 1c";
+    /* font-weight: bold; */
+    padding: 15px 15px 20px 60px;
+}
+
+@media screen and (max-width:478px) {
+    .backtext{
+        font-size: 15px;
+        
+    }   
+}
+
+.sidetext {
+    font-size: 21px;
+    font-family: "M PLUS Rounded 1c";
+    /* font-weight: bold; */
+    padding: 15px 18px 20px 48px;
+}
+
+@media screen and (max-width:478px) {
+    .sidetext{
+        font-size: 15px;
+        
+    }   
+}
+
+.denimtext {
+    font-size: 22px;
+    font-family: "M PLUS Rounded 1c";
+     /* font-weight: bold; */
+    padding: 15px 17px 20px 37px;
+
+}
+
+@media screen and (max-width:478px) {
+    .denimtext{
+        font-size: 15px;
+        
+    }   
+}
+
+.box1 {
+    cursor: pointer;
+    max-width: 350px;
+    overflow: hidden;
+    width: 350px;
+}
+
+.box1 img {
+    height: auto;
+    width: 90%;
+    border-radius: 50%;
+    border: solid 2px gray;/*線*/
+}
+
+@media screen and (max-width:478px) {
+    .box1 img{
+        width: 90%;
+        
+    }   
+}
+
+
+.box2 {
+    cursor: pointer;
+    max-width: 350px;
+    overflow: hidden;
+    width: 350px;
+}
+
+.box2 img {
+    height: 220px;
+    transition: transform .6s ease;/* ゆっくり変化させる */
+    width: 90%;
+    border-radius: 50%;
+    border: solid 2px gray;/*線*/
+}
+
+@media screen and (max-width:478px) {
+    .box2 img{
+        width: 90%;
+        
+    }   
+}
+
+/* .box2:hover img {
+    transform: scale(1.1);
+} */
+
+.box3 {
+    cursor: pointer;
+    max-width: 350px;
+    overflow: hidden;
+    width: 350px;
+}
+
+.box3 img {
+    height: 26vh;
+    transition: transform .6s ease;/* ゆっくり変化させる */
+    width: 90%;
+    border-radius: 50%;
+    border: solid 2px black;/*線*/
+}
+
+@media screen and (max-width:478px) {
+    .box3 img{
+        width: 90%;
+    }   
+}
+
+
+.section4 {
+    height: 90vh;
+    background-color: white;
+    
+}
+
+@media screen and (max-width:478px) {
+    .section4{
+        height: 200vh;      
+    }   
+}
+
+.bussiness {
+    height: 40vh;
+    background-color: whitesmoke;
+    padding: 50px;
+    
+}
+
+@media screen and (max-width:478px) {
+    .bussiness{
+       height: 150vh; 
+    }   
+}
+
+.company {
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:478px) {
+    .company{
+        display: block;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        justify-content: space-around;
+    }   
+}
+
+.companytitle {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "M PLUS Rounded 1c";
+    margin-left: 50px;
+}
+
+.about-company li {
+   list-style: none;
+   margin: 25px;
+   font-family: "M PLUS Rounded 1c";
+   font-size: 20px;
+}
+
+.introduce {
+    font-size: 20px;
+    width: 28%;
+    margin-top: 75px;
+}
+
+@media screen and (max-width:478px) {
+    .introduce{
+        font-size: 15px;
+        margin: 0;
+        width: auto;
+    }   
+}
+
+.people {
+    height: 40vh;
+    width: 13vw;
+    display: float;
+    
+}
+
+@media screen and (max-width:478px) {
+    .people{
+        width: 50vw;
+        
+    }   
+}
+
+.Saki {
+    height: 18vh;
+    width: 13vw;
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+    /* padding: 40px; */
+}
+
+@media screen and (max-width:478px) {
+    .Saki{
+        width: 60vw;
+        margin: 20px 30px;
+        
+    }   
+}
+
+.Nao {
+    height: 20vh;
+    width: 13vw;
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+    /* padding: 40px; */
+}
+
+@media screen and (max-width:478px) {
+    .Nao{
+        width: 60vw;
+        margin: 10px 30px;
+        
+    }   
+}
+
+.food {
+    height: 40vh;
+    width: 13vw;
+    display: float;
+}
+
+
+@media screen and (max-width:478px) {
+    .food{
+        width: 50vw;
+        margin-top: 65px;
+        margin-left: 30px;
+        
+    }   
+}
+
+
+.Sweet {
+    height: 18vh;
+    width: 13vw;
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+    /* padding: 40px; */
+}
+
+@media screen and (max-width:478px) {
+    .Sweet{
+        width: 60vw;
+        margin-top: 30px;
+        
+    }   
+}
+
+.bread {
+    height: 20vh;
+    width: 13vw;
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+    /* padding: 40px; */
+}
+
+@media screen and (max-width:478px) {
+    .bread{
+        width: auto;
+        
+    }   
+}
+
+.news {
+    font-size: 30px;
+    font-family: "M PLUS Rounded 1c";
+    text-align: center;
+    padding: 20px;
+}
+  
+
+
+.news_list {
+    font-size: 20px;
+    font-family: "M PLUS Rounded 1c";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    list-style: none;
+}
+  
+.news_list_item {
+    padding: 25px 0;
+    border-bottom: 1px solid #E6E6E6;
+    text-align: center;
+}
+  
+.news_list_item:first-child {
+    border-top: 1px solid #E6E6E;
+}
+
+.news_list_item a {
+   position: relative;
+   display: flex;
+   padding-right: 30px;
+   text-align: left;
+   
+}
+
+  
+.news_list_date {
+    font-size: 15px;
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+}
+  
+.news_item {
+    background: #F6C6A2;
+    border-radius: 14px;
+    width: 6em;
+    /* 親要素の文字サイズを基準 */
+    text-align: center;
+    margin-left: 20px;
+    
+}
+  
+.arrow {
+    width: 25px;
+    height: 1px;
+    background: #707070;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+  
+.arrow::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 1px;
+    background: #707070;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0px;
+    bottom: 2px;
+}
+  
+  
+  @media screen and (max-width: 1024px) {
+      .news_list_item a {
+          display: block;
+          font-size: 16px;
+          text-align: center;
+      }
+  }
+
+  .section5 {
+    height: 80vh;
+    background-color:aliceblue;
+    background-image: url(./newwood.jpeg);
+    background-size: cover
+  }
+
+  
+@media screen and (max-width:478px) {
+    .section5{
+        height: 70vh;
+        width: 100%
+    }   
+}
+
+  .funding {
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "M PLUS Rounded 1c";
+    animation: load 2.2s ease 0s 1 normal;
+    padding-top: 45px;
+    
+  }
+
+  @keyframes load{
+    0%{
+      transform:translateX(30px) rotate(30deg) ;
+    }
+    
+    100%{
+      opacity:1;
+      transform:translateX(0px) rotate(0);
+    }
+  }
+
+  
+@media screen and (max-width:478px) {
+    .funding{
+        font-size: 15px;
+        margin: 13px;
+        
+    }   
+}
+
+  .reference {
+    height: 40vh;
+    background-image: url(./funding.jpg);
+    background-size: contain;
+
+  }
+
+  
+@media screen and (max-width:478px) {
+    .reference{
+        width: 100%;
+        height: 25vh;
+        margin-top: 40px;
+        
+    }   
+}
+
+  .section6 {
+    height: 40vh;
+  }
+
+  .eventtitle {
+    font-size: 30px;
+    font-family: "M PLUS Rounded 1c";
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .eventdetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .eventbox1{
+    width:300px;
+    height:150px;
+    background: #FFDAB9;
+    border-radius:30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: "M PLUS Rounded 1c";
+  }
+
+  .eventbox2{
+    width:300px;
+    height:150px;
+    background-color: #FFDAB9;
+    border-radius:30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: "M PLUS Rounded 1c";
+  }
+
+  .media-icons {
+    height: 28vh;
+    background-color: #f5f5f5;
+    
+  }
+  
+  .footer-title {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    color: gray;
+    font-family: "M PLUS Rounded 1c";
+  }
+
+  .contact {
+    font-size: 19px;
+    font-family: "M PLUS Rounded 1c";
+    text-align: center;
+    padding-top: 10px;
+    
+  }
+  .contact li {
+    list-style: none;
+  }
+
+  .media-icons img {
+    height: 20px;
+    color: black;
+    
+  }
+
+  
+.bottom {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "M PLUS Rounded 1c";
+    font-weight: bold;
+}
