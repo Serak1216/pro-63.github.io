@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+    font-family: "M PLUS Rounded 1c";
+}
+
 header {
     display: flex;
     width: 100%;
@@ -14,7 +19,7 @@ header {
 
 @media screen and (max-width:478px) {
     .header{
-        width: auto;
+        width: 100%;
     }
     
 }
@@ -27,17 +32,18 @@ header {
     padding-left: 20px;
 }
 
+.menu {
+    margin: auto 0;
+}
 .menu-item {
     list-style: none;
     display: inline-block;
     padding: 20px;
-    text-decoration: none;
-
 }
 
 a {
-    text-decoration: none;
-    color: black;
+    text-decoration: none !important; 
+    color: black !important;
 }
 
 @media screen and (max-width:478px) {
@@ -48,11 +54,16 @@ a {
     
 }
 
+main {
+    width: 100%;
+}
 .section1 {
+    padding-top: 70px;
+    width: 100%;
     background-image: url(./reef.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +71,7 @@ a {
 
 @media screen and (max-width:478px) {
     .section1{
-        width: auto;
+        height: 40vh;
     }
     
 }
@@ -93,11 +104,14 @@ h1 {
     
 
 .section2 {
-    height: 80vh;
+    /* min-height: 80vh; */
+    margin-top: 40px;
+    width: 100%;
     background-color:white;
     font-size: 20px;
     display: flex;
-    
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 @media screen and (max-width:478px) {
@@ -109,11 +123,14 @@ h1 {
 }
 
 .section2left {
-    width: 35vw;
-    height: 60vh;
-    padding: 90px;
-    margin-top: 30px;
-    text-align: center;
+    width: 33%;
+    /* padding: 20px; */
+    /* vertical-align: middle; */
+    margin: auto 0;
+    min-width: 330px;
+    /* padding: 90px; */
+    /* margin-top: 30px; */
+    /* text-align: center; */
 }
 
 @media screen and (max-width:478px) {
@@ -124,12 +141,17 @@ h1 {
     
 }
 
-.visiontitle {
+h2 {
     font-size: 30px;
     font-weight: bold;
 }
 
+h3 {
+    font-size: 24px;
+}
+
 .decision {
+    margin: 20px;
     text-align: center;
     font-size: 23px;
     font-family: "M PLUS Rounded 1c";
@@ -153,51 +175,69 @@ h1 {
   }
 
 .section2right {
+    width: 66%;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:478px) {
+    .section2right{
+        width: 80%;
+    }
+    
 }
 
 
-@media screen and (max-width:478px) {
+/* @media screen and (max-width:478px) {
     .section2right{
         margin: 0;
         padding: 0;
     }   
-}
+} */
 
-@media screen and (max-width:478px) {
+/* @media screen and (max-width:478px) {
     .section2right{
         display: block;
         width: auto;
     }
     
+} */
+
+.sec2-image {
+    width: 33%;
+    height: auto;
 }
 .picture1 {
     height: 50vh;
-    padding: 90px 20px; animation: transscaleX 1.7s ease 0s 1 normal;
+    width: auto;
+    /* padding: 90px 20px;  */
+    animation: transscaleX 1.7s ease 0s 1 normal;
 
 }
 
 @media screen and (max-width:478px) {
     .picture1{
-        width: 60vw;
-        height: 40vh;
-        padding: 10px 80px;
-
+        /* width: 60vw; */
+        height: 20vh;
+        width: auto;
     }
     
 }
 
 .picture2 {
     height:55vh;
-    padding: 160px 30px;
+    width: auto;
+    /* padding: 160px 30px; */
+    margin-top: auto;
+    margin-bottom: 0;
     animation: transscaleX 1.7s ease 0s 1 normal;
 }
 
 @media screen and (max-width:478px) {
     .picture2{
-        width: 60vw;
-        height: 40vh;
-        padding: 10px 80px;
+        height: 25vh;
+        width: auto;
     }
     
 }
@@ -206,18 +246,14 @@ h1 {
 
 
 .section3 {
-    height: 80vh;
     background-color:white;
-   
 }
 
-@media screen and (max-width:478px) {
+/* @media screen and (max-width:478px) {
     .section3{
         width: auto;
-        height: 150vh;
     }
-    
-}
+} */
 
 .mission {
     font-size: 35px;
@@ -228,7 +264,6 @@ h1 {
 
 @media screen and (max-width:478px) {
     .mission{
-        width: auto;
         font-size: 18px;
     }
     
@@ -306,114 +341,124 @@ h1 {
     }   
 }
 
-.box1 {
+.mission-box {
+    width: 33%;
+    min-width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:478px) {
+    .mission-box {
+        max-width: 100%;
+    }
+    .mission-box img {
+        max-width: 100%;
+    }
+}
+
+.mission-box img {
+    margin: 0 auto;
+    height: 220px;
+}
+
+.mission-text {
+    font-size:  22px;
+    text-align: center;
+}
+
+/* .box1 {
     cursor: pointer;
     max-width: 350px;
     overflow: hidden;
     width: 350px;
-}
+} */
 
 .box1 img {
-    height: auto;
+    /* height: auto; */
     width: 90%;
     border-radius: 50%;
+    /* margin: 0 auto; */
     border: solid 2px gray;/*線*/
 }
 
-@media screen and (max-width:478px) {
+/* @media screen and (max-width:478px) {
     .box1 img{
         width: 90%;
-        
     }   
-}
+} */
 
 
-.box2 {
+/* .box2 {
     cursor: pointer;
     max-width: 350px;
     overflow: hidden;
     width: 350px;
-}
+} */
 
 .box2 img {
-    height: 220px;
+    /* height: 220px; */
     transition: transform .6s ease;/* ゆっくり変化させる */
-    width: 90%;
+    /* width: 90%; */
     border-radius: 50%;
     border: solid 2px gray;/*線*/
 }
 
-@media screen and (max-width:478px) {
+/* @media screen and (max-width:478px) {
     .box2 img{
         width: 90%;
         
     }   
-}
+} */
 
 /* .box2:hover img {
     transform: scale(1.1);
 } */
 
-.box3 {
+/* .box3 {
     cursor: pointer;
     max-width: 350px;
     overflow: hidden;
     width: 350px;
-}
+} */
 
 .box3 img {
-    height: 26vh;
+    /* height: 26vh; */
     transition: transform .6s ease;/* ゆっくり変化させる */
-    width: 90%;
+    /* width: 90%; */
     border-radius: 50%;
     border: solid 2px black;/*線*/
 }
 
-@media screen and (max-width:478px) {
+/* @media screen and (max-width:478px) {
     .box3 img{
         width: 90%;
     }   
-}
+} */
 
 
 .section4 {
-    height: 90vh;
     background-color: white;
-    
-}
-
-@media screen and (max-width:478px) {
-    .section4{
-        height: 200vh;      
-    }   
 }
 
 .bussiness {
-    height: 40vh;
     background-color: whitesmoke;
     padding: 50px;
     
 }
 
-@media screen and (max-width:478px) {
-    .bussiness{
-       height: 150vh; 
-    }   
-}
-
 .company {
-    height: 40vh;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 @media screen and (max-width:478px) {
     .company{
-        display: block;
-        height: 100vh;
         width: 100%;
-        display: block;
         justify-content: space-around;
     }   
 }
@@ -427,7 +472,6 @@ h1 {
 
 .about-company li {
    list-style: none;
-   margin: 25px;
    font-family: "M PLUS Rounded 1c";
    font-size: 20px;
 }
@@ -436,6 +480,7 @@ h1 {
     font-size: 20px;
     width: 28%;
     margin-top: 75px;
+    padding: 0 20px;
 }
 
 @media screen and (max-width:478px) {
@@ -446,16 +491,37 @@ h1 {
     }   
 }
 
+.images {
+    width: 30%;
+    min-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.images img {
+    width: 50%;
+    /* min-width: 200px; */
+    padding: 10px;
+}
+
+@media screen and (max-width:478px) {
+    .images img{
+        min-width: 180px;
+        margin: 0 auto;
+    }   
+}
+
 .people {
-    height: 40vh;
-    width: 13vw;
-    display: float;
+    /* height: 40vh; */
+    /* width: 13vw; */
+    /* display: float; */
     
 }
 
 @media screen and (max-width:478px) {
     .people{
-        width: 50vw;
+        /* width: 50vw; */
         
     }   
 }
@@ -470,7 +536,7 @@ h1 {
 @media screen and (max-width:478px) {
     .Saki{
         width: 60vw;
-        margin: 20px 30px;
+        /* margin: 20px 30px; */
         
     }   
 }
@@ -485,23 +551,21 @@ h1 {
 @media screen and (max-width:478px) {
     .Nao{
         width: 60vw;
-        margin: 10px 30px;
+        /* margin: 10px 30px; */
         
     }   
 }
 
 .food {
-    height: 40vh;
-    width: 13vw;
-    display: float;
+    /* display: float; */
 }
 
 
 @media screen and (max-width:478px) {
     .food{
         width: 50vw;
-        margin-top: 65px;
-        margin-left: 30px;
+        /* margin-top: 65px; */
+        /* margin-left: 30px; */
         
     }   
 }
@@ -517,7 +581,7 @@ h1 {
 @media screen and (max-width:478px) {
     .Sweet{
         width: 60vw;
-        margin-top: 30px;
+        /* margin-top: 30px; */
         
     }   
 }
@@ -541,6 +605,7 @@ h1 {
     font-family: "M PLUS Rounded 1c";
     text-align: center;
     padding: 20px;
+    margin: 50px;
 }
   
 
@@ -622,7 +687,6 @@ h1 {
   }
 
   .section5 {
-    height: 80vh;
     background-color:aliceblue;
     background-image: url(./newwood.jpeg);
     background-size: cover
@@ -631,23 +695,25 @@ h1 {
   
 @media screen and (max-width:478px) {
     .section5{
-        height: 70vh;
+        /* height: 70vh; */
         width: 100%
     }   
 }
 
   .funding {
-    height: 35vh;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     text-align: left;
     font-size: 23px;
     font-weight: bold;
     font-family: "M PLUS Rounded 1c";
     animation: load 2.2s ease 0s 1 normal;
-    padding-top: 45px;
-    
+    padding: 50px;
   }
+
+.found-box {
+    margin-top: 20px;
+}
 
   @keyframes load{
     0%{
@@ -673,7 +739,6 @@ h1 {
     height: 40vh;
     background-image: url(./funding.jpg);
     background-size: contain;
-
   }
 
   
@@ -682,7 +747,6 @@ h1 {
         width: 100%;
         height: 25vh;
         margin-top: 40px;
-        
     }   
 }
 
@@ -753,6 +817,10 @@ h1 {
     padding-top: 10px;
     
   }
+
+.contact-ul {
+    padding: 0;
+}
   .contact li {
     list-style: none;
   }
